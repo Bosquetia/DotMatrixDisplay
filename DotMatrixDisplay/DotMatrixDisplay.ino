@@ -1,4 +1,4 @@
-/// Configure is you want to use OLED display or DEBUG to serial
+// Configure if you want to use OLED display or DEBUG to serial
 // Comment option to disable
 #define USE_OLED_DISPLAY 
 #define USE_LIGHT_SENSOR
@@ -85,7 +85,7 @@ const char* MQTT_TOPIC_MESSAGE = "jeedom/message";                          // M
 const char* MQTT_TOPIC_SENSOR  = "jeedom/ESP8266_LED_MATRIX_BOX/sensors";   // MQTT topic to publish temperature
 const char* MQTT_TOPIC_SENSOR_DEVICE  = "ESP8266_LED_MATRIX_BOX";           // MQTT topic to publish temperature
 const char* MQTT_CLIENT_ID ="ESP32Client";                                  // MQTT client id needed to get offline messages during reconnexion | not working mqtt lib doesnot support clean session
-const IPAddress MQTT_BROKER_IP(37,187,1,120);                               // MQTT BROKER IP address
+const IPAddress MQTT_BROKER_IP(192,168,1,107);                              // MQTT BROKER IP address
 const int  MQTT_BROKER_PORT = 1883;                                         // MQTT BROKER port
 const int MQTT_POLLING_SENSOR = 15*60*1000;                                      // MQTT polling delay between sending temperature to jeedom in millisec
 
